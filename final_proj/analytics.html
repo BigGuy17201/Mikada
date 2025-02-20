@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Mikada </title>
+<meta name="Content-Type" content="UMBC/wait/food/analysis">
+<meta charset="UTF-8"> 
+<link rel="stylesheet" type="text/css" href="analytics.css">
+</head>
+
+<body>
+	<header class="header">
+	
+		<div class="header-content">
+			<a class="header-content-home" href="home.html">Mikada</a>
+			<p class="header-content-desc">Find and report real-time wait times for your favorite dining options on campus based on user reports </p>
+		</div>
+		
+		<img class="header-logo-left" src="images/umbc.png" alt="umbc logo">
+		<img class="header-logo-right" src="images/mikada.png" alt="mikada logo">
+		<p class="spacer"></p>
+		
+	</header>
+	
+	
+	
+	<nav class="buttons">
+		<a href="rest.html" class="links">Restaurants</a>
+		<a href="analytics.html" class="links">Analysis</a>
+		<a href="account.php" class="links">Account</a>
+		<a href="hoo.html" class="links">Hours of Operation</a>
+		<a href="otherp.html" class="links">Other Pages</a>
+	</nav>
+
+    <!--Main body of the page-->
+    <div class = "main">
+        <main>
+            <!-- Main body of the page 
+            <h1>It is October 11th, 2024! ☀️</h1>
+            <h2>Favorite Restaurants</h2>
+            <p>Chick-Fil-A</p> 
+            <p>Halal-Shack</p>
+            <p>Sushi-Do</p>
+
+            <h2>Chick-Fil-A's wait time fluctuation for Oct 11, 2024</h2>
+			<form action="" method="GET">
+				<label>Enter interval in format (HH:MM) - (HH:MM) <br>
+					<input type="text" id="time-frame" name="timeframe">
+				</label>
+				
+				
+				<div class="center">
+					<img src="images/graphexample.png" width="400">
+				</div>
+				<p class="spacer"></p>
+	 
+				<label>Search for Restaurant<br>
+					<input type="text" id="resto-name" name="search">
+				</label>
+				
+				<label>Select Favorite Restaurant<br>
+					<input type="text" id="fav-rest" name="favorite">
+				</label>
+				<p>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</p>
+			</form>
+			-->
+			
+			<form method="GET" action="analysis.php">
+				<p> Enter restaurant name for current shortest wait: <br />
+					<input type="text" name="restaurant" />  <br />
+					<input type = "submit" value = "submit request" />
+				</p>
+			</form>
+        </main>
+    </div>
+	
+	
+
+	
+</body>
+
+</head>
+</html>

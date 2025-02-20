@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Signup </title>
+	<meta name="description" content="UMBC/wait/food/analysis">
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="account.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+	<script type="text/javascript"  src="val_signup.js"></script>
+</head>
+
+<body>
+	<header class="header">
+	
+		<div class="header-content">
+			<a class="header-content-home" href="mikada.html">Mikada</a>
+			<p class="header-content-desc">Find and report real-time wait times for your favorite dining options on campus based on user reports </p>
+		</div>
+		
+		<img class="header-logo-left" src="images/umbc.png" alt="umbc logo">
+		<img class="header-logo-right" src="images/mikada.png" alt="mikada logo">
+		<p class="spacer"></p>
+		
+	</header>
+	
+    <div class = "main">
+        <main>
+
+            <form action="signup.php" method="POST">
+				<label for="fname">Enter First Name<br>
+					<input type="text" name="fname" id="fname" required>
+				</label>
+				<br>
+				<label>Enter Last Name<br>
+					<input type="text" name="lname" id="lname" required>
+				</label>
+				<br>
+				<label>Enter Username<br>
+					<input type="text" name="user" id="user" required>
+				</label>
+				<span id="user_msg"></span>
+				<br>
+				<label>Enter Password<br>
+					<input type="Password" name="pass" id="pass" required>
+				</label>
+				<br>
+				<label>Confirm Password<br>
+					<input type="Password" name="pass_repeat" id="pass_repeat" required>
+				</label>
+				<br>
+				<label>Enter Email<br>
+					<input type="email" name="email" id="email" required>
+				</label>
+				<span id="email_msg"></span>
+				<p>
+					<input type="submit" value="Submit" required>
+				</p>
+            </form>
+        </main>
+    </div>
+	
+	
+
+	
+</body>
+
+</html>

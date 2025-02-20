@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Login </title>
+	<meta name="description" content="UMBC/wait/food/analysis">
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="account.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+	<script type="text/javascript"  src="login.js"></script>
+</head>
+
+<body>
+	<header class="header">
+	
+		<div class="header-content">
+			<a class="header-content-home" href="mikada.html">Mikada</a>
+			<p class="header-content-desc">Find and report real-time wait times for your favorite dining options on campus based on user reports </p>
+		</div>
+		
+		<img class="header-logo-left" src="images/umbc.png" alt="umbc logo">
+		<img class="header-logo-right" src="images/mikada.png" alt="mikada logo">
+		<p class="spacer"></p>
+		
+	</header>
+
+    <div class = "main">
+        <main>
+
+            <form action="login.php" method="POST">
+				<label>Enter Username <br>
+					<input type="text" name="user" id="user" required>
+				</label>
+				<br>
+				<label>Enter Password <br>
+					<input type="Password" name="pass" id="pass" required>
+				</label>
+				<p>
+					<input type="submit" value="Submit">
+				</p>
+            </form>
+        </main>
+    </div>
+	
+	
+
+	
+</body>
+
+</html>

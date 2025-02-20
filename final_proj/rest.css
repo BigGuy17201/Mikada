@@ -1,0 +1,90 @@
+body{
+	background-color:#ffe6b3;
+	margin: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: #ffcc66;
+}
+
+.header-logo-left{
+	float: left;
+	width: 145px;
+	height: 135px;
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.spacer{
+	clear:both;
+}
+
+.header-logo-right{
+	float: right;
+	width: 145px;
+	height: 135px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+
+.header-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-content-home { /*mikada link style*/
+    font-size: 45pt;
+    font-weight: bold;
+    font-family: Monospace, Lucida Console;
+	color: black;
+    text-decoration: none;
+}
+
+.header-content-desc { /*homepage description link style*/
+    font-size: 17pt;
+    font-weight: bold;
+    font-family: Cursive, Comic Sans MS;
+	font-style: italic;
+}
+
+/*______________________________Buttons_________________________________*/
+
+.buttons {
+    text-align: center; 
+    background-color: black;
+    padding: 10px 0;
+}
+
+.links {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin: 0 50px; /* spaces buttons  */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	font-size: 18pt;
+}
+
+/*______________________________main_________________________________*/
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+.imggrid{
+	display: block; 
+    margin: auto; 
+    width: 175px;
+    height: 175px;
+    clear: both; 
+}
+
+label{
+	font-weight: bold;
+	font-size: 15pt;
+}

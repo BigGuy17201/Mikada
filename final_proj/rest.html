@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Restaurants </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="rest.css" type="text/css"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+	<script type="text/javascript"  src="wait.js"></script>
+</head>
+
+<!-- This contains the header logo as well as the images-->
+<body>
+    <header class="header">
+    
+      <div class="header-content"> <a class="header-content-home" href="home.html">Mikada</a> <p class="header-content-desc">Find and report real-time wait times for your favorite dining options on campus based on user reports </p> </div>
+        <img class="header-logo-left" src="images/umbc.png" alt="umbc logo">
+        <img class="header-logo-right" src="images/mikada.png" alt="mikada logo"> 
+         <p class="spacer"></p>
+       
+        
+    </header>
+    
+    <!-- Makes the tabs in the header into links that lead to different pages-->
+
+    
+    <nav class="buttons">
+        <a href="rest.html" class="links">Restaurants</a>
+        <a href="analytics.html" class="links">Analysis</a>
+        <a href="account.php" class="links">Account</a>
+        <a href="hoo.html" class="links">Hours of Operation</a>
+        <a href="otherp.html" class="links">Other Pages</a>
+    </nav>
+
+<!-- Images of restaurants as buttons with width of 200. Buttons will have functionality in the next
+ deliverable -->
+	<form action = "wait_output.php" method = "get">
+		<button type="submit" name="button" value="Halal Shack">
+			<img class="imggrid" src="images/halal.png" alt="Halal">
+		</button>
+		<button type="submit" name="button" value="2.Mato">
+			<img class="imggrid" src="images/tomato.png" alt="2Mato">
+		</button>
+		<button type="submit" name="button" value="Sushi Do">
+			<img class="imggrid" src="images/sushido.png" alt="Sushi">
+		</button>
+		<button type="submit" name="button" value="Indian Kitchen">
+			<img class="imggrid"  src="images/indiankitchen.jpg" alt="Indian">
+		</button>
+		<button type="submit" name="button" value="True Grits">
+			<img class="imggrid" src="images/truegrits.png" alt="Grits">
+		 </button>
+		<button type="submit" name="button" value="Wild Greens">
+			<img class="imggrid" src="images/wildgreens.png" alt="Greens">
+		</button>
+		<button type="submit" name="button" value="Dunkin Doughnuts">
+			<img class="imggrid" src="images/dunkin.png" alt="Dunkin">
+		</button>
+		<button type="submit" name="button" value="Copperhead Jacks">
+			<img class="imggrid" src="images/copperhead.png" alt="Copperhead">
+		</button>
+		<button type="submit" name="button" value="Absurd Bird & Burgers">
+			<img class="imggrid" src="images/absurdbird.png" alt="Absurd Bird & Burgers">
+		</button>
+		<button type="submit" name="button" value="Einstein Brothers Bagels">
+			<img class="imggrid" src="images/einstein.png" alt="Einstein">
+		</button>
+		<button type="submit" name="button" value="Chick-Fil-A">
+			<img class="imggrid" src="images/chick.png" alt="Chick-Fil-A">
+		</button>
+		<button type="submit" name="button" value="Admin Coffee Shop">
+			<img class="imggrid" src="images/admin.png" alt="Admin Coffee Shop">
+		</button>
+		<button type="submit" name="button" value="Starbucks">
+			<img class="imggrid" src="images/starbucks.png" alt="Starbucks"> 
+		</button>
+	</form>
+
+	<br>
+    <form action = "wait_input.php" method = "get">
+	
+	<label>Select Restaurant<br>
+		<input type="radio" name="restaurant" value="Halal Shack"> Halal Shack
+		<input type="radio" name="restaurant" value="2.Mato"> 2.Mato
+		<input type="radio" name="restaurant" value="Sushi Do"> Sushi Do
+		<input type="radio" name="restaurant" value="Indian Kitchen"> Indian Kitchen
+		<input type="radio" name="restaurant" value="True Grits"> True Grits
+		<input type="radio" name="restaurant" value="Wild Greens"> Wild Greens
+		<input type="radio" name="restaurant" value="Dunkin Doughnuts"> Dunkin Doughnuts
+		<br>
+		<input type="radio" name="restaurant" value="Copperhead Jacks"> Copperhead Jacks
+		<input type="radio" name="restaurant" value="Absurd Bird & Burgers"> Absurd Bird & Burgers
+		<input type="radio" name="restaurant" value="Einstein Brothers Bagels"> Einstein Brothers Bagels
+		<input type="radio" name="restaurant" value="Chick-Fil-A"> Chick-Fil-A
+		<input type="radio" name="restaurant" value="Admin Coffee Shop"> Admin Coffee Shop
+		<input type="radio" name="restaurant" value="Starbucks"> Starbucks
+	</label>
+	<br>
+	
+    <label>Enter Observed Wait Time in format (HH:MM:SS)24hr: <br>
+		<input type="text" id="userWaitTime" name="userWaitTime">
+	</label>
+    <input type = "submit" value="Submit" />
+
+    </form>
+
+</body>
+    
+    
+

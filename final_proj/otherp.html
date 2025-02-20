@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Other Pages </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="otherp.css" type="text/css"/>
+</head>
+
+<!-- This contains the header logo as well as the images-->
+<body>
+    <header class="header">
+    
+		<div class="header-content"> <a class="header-content-home" href="home.html">Mikada</a> <p class="header-content-desc">Find and report real-time wait times for your favorite dining options on campus based on user reports </p> </div>
+        <img class="header-logo-left" src="images/umbc.png" alt="umbc logo">
+        <img class="header-logo-right" src="images/mikada.png" alt="mikada logo"> 
+		<p class="spacer"></p>
+        
+    </header>
+    
+    <!-- Makes the tabs in the header into links that lead to different pages-->
+
+    
+    <nav class="buttons">
+        <a href="rest.html" class="links">Restaurants</a>
+        <a href="analytics.html" class="links">Analysis</a>
+        <a href="account.php" class="links">Account</a>
+        <a href="hoo.html" class="links">Hours of Operation</a>
+        <a href="otherp.html" class="links">Other Pages</a>
+    </nav>
+
+    
+    <!-- Inserts 2 links for the dining website and instagram-->
+	<main class="main">
+		<h2> Helpful Links </h2> 
+		<p>
+			<button onclick="NewTabDiningWeb()">
+				UMBC Dining Website
+			</button>
+			<button onclick="NewTabDiningInsta()">
+				UMBC Dining Instagram
+			</button>
+			<button onclick="NewTabDiningMap()">
+				UMBC Campus Map
+			</button>
+		</p>
+
+		<script>
+			function NewTabDiningWeb() {
+				window.open(
+					"https://dineoncampus.com/UMBC", "_blank"
+				)
+			}
+		</script>
+
+		<script>
+			function NewTabDiningInsta() {
+				window.open(
+					"https://www.instagram.com/umbcdining/?hl=en", "_blank"
+				)
+			}
+		</script>
+
+		<script>
+			function NewTabDiningMap() {
+				window.open(
+					"https://mcac.umbc.edu/maps-and-directions/", "_blank"
+				)
+			}
+		</script>
+
+		<!-- Text area with a submit button that is 20x20-->
+		<form action = "otherp.php" method = "get">
+			<label>Comments:<br>
+				<textarea name="comments" rows="5" cols="75"></textarea>
+			</label>
+			<br>
+			<input type = "submit" value="Submit" />
+		</form>
+		<br>
+		<form action = "comments.php" method = "get">
+			<input type = "submit" value="Show Comments" />
+		</form>
+	</main>
+      
+<body>
+
+</html>
